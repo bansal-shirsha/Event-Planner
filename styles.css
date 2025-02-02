@@ -1,0 +1,227 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #4caf50;
+}
+
+#themeToggle {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#themeToggle:hover {
+    background-color: #66bb6a;
+    transform: scale(1.05);
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+h2 {
+    color: #4caf50;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #ffffffa3;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+#eventList, #taskList, #rsvpEvents {
+    margin-top: 20px;
+}
+
+.event-card, .task-card, .rsvp-card {
+    background-color: #2a2a2a;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.event-card:hover, .task-card:hover, .rsvp-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1f1f1f;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+body.light-theme {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+body.light-theme header {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+body.light-theme section {
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme form input, body.light-theme form textarea {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+body.light-theme form button {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+body.light-theme form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #00000094;
+}
+
+body.light-theme form button:hover {
+    background-color: #66bb6a;
+}
+
+body.light-theme .event-card, body.light-theme .task-card, body.light-theme .rsvp-card, body.light-theme .feedback-card{
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+#searchEvent {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+#calendarView {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.calendar-event {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sponsor-card {
+    background-color: #3e413f;
+    padding: 10px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#feedbackForm select, #feedbackForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #71737293;
+    color: #ffffff;
+}
+
+.feedback-card {
+    background-color: #343434;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-card h3 {
+    margin-top: 0;
+}
+
+.feedback-card p {
+    margin: 5px 0;
+}   
+form button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.35s, transform 0.3s;
+}
+
+form button:hover{
+    background-color: #66bb6a;
+    transform: scale(1.05);
+}
