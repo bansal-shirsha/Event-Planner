@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Event Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Event Planner</h1>
+        <nav>
+            <ul>
+                <li><a href="#create-event">Create Event</a></li>
+                <li><a href="#rsvp">RSVP</a></li>
+                <li><a href="#tasks">Tasks</a></li>
+                <li><a href="#sponsors">Sponsors</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>
+        </nav>
+        <br>
+        <button id="themeToggle">🌞 Light Theme</button>
+    </header>
+
+    <section id="create-event">
+        <h2>Create Event</h2>
+        <form id="eventForm">
+            <label for="eventName">Event Name:</label>
+            <input type="text" id="eventName" required>
+
+            <label for="eventDate">Event Date:</label>
+            <input type="date" id="eventDate" required>
+
+            <label for="eventTime">Event Time:</label>
+            <input type="time" id="eventTime" required>
+
+            <label for="eventVenue">Venue:</label>
+            <input type="text" id="eventVenue" required>
+
+            <label for="eventDescription">Description:</label>
+            <textarea id="eventDescription" rows="4" required></textarea>
+
+            <button type="submit">Create Event</button>
+        </form>
+        <div id="eventList"></div>
+    </section>
+
+    <section id="rsvp">
+        <h2>RSVP for Events</h2>
+        <input type="text" id="searchEvent" placeholder="Search events...">
+        <div id="rsvpEvents"></div>
+    </section>
+
+    <section id="tasks">
+        <h2>Task Assignment</h2>
+        <form id="taskForm">
+            <label for="taskName">Task Name:</label>
+            <input type="text" id="taskName" required>
+
+            <label for="assignee">Assign To:</label>
+            <input type="text" id="assignee" required>
+
+            <label for="deadline">Deadline:</label>
+            <input type="date" id="deadline" required>
+
+            <button type="submit">Assign Task</button>
+        </form>
+        <div id="taskList"></div>
+    </section>
+
+    <section id="sponsors">
+        <h2>Sponsors</h2>
+        <form id="sponsorForm">
+            <label for="sponsorName">Sponsor Name:</label>
+            <input type="text" id="sponsorName" required>
+
+            <label for="sponsorAmount">Amount(INR):</label>
+            <input type="number" id="sponsorAmount" required>
+
+            <button type="submit">Add Sponsor</button>
+        </form>
+        <div id="sponsorList"></div>
+    </section>
+
+    <section id="feedback">
+        <h2>Event Feedback</h2>
+        <form id="feedbackForm">
+            <label for="eventSelect">Select Event:</label>
+            <select id="eventSelect" required>
+            
+            </select>
+
+            <label for="feedbackRating">Rating:</label>
+            <select id="feedbackRating" required>
+                <option value="5">5 - Excellent</option>
+                <option value="4">4 - Very Good</option>
+                <option value="3">3 - Good</option>
+                <option value="2">2 - Average</option>
+                <option value="1">1 - Poor</option>
+            </select>
+
+            <label for="feedbackComments">Comments:</label>
+            <textarea id="feedbackComments" rows="4" required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+        <div id="feedbackList"></div>
+    </section>
+
+    <footer>
+        <p>&copy;2025 Event Planner</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
